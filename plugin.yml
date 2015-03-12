@@ -1,0 +1,9 @@
+name: PlayBoosts
+main: io.github.daschnerj.playBoosts.PlayBoosts
+version: 0.0.1
+commands:
+   boost:
+      description: This is the basic command for Boosts.
+      usage: /<command> [args]
+      permission: boost.user
+      permission-message: You don't have <permission>.
