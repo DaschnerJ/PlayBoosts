@@ -39,12 +39,9 @@ public class PlayBoosts extends JavaPlugin
 		getLogger().info("onDisable has been invoked!");
 	}
 	
-	public void registerCommands() {
-		 
-        CommandHandler handler = new CommandHandler();
- 
+	public void registerCommands() 
+	{ 
         this.getCommand("boost").setExecutor(new PlayBoostArgs());
-        getCommand("boosts").setExecutor(handler);
     }
 
 }

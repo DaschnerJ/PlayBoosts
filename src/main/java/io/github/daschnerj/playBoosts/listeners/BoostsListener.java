@@ -47,6 +47,7 @@ public final PlayBoosts plugin;
     public void onPlayerJoin(PlayerJoinEvent event) 
     {
         Player player = event.getPlayer();
+        if(!player.isOp())
         player.setGameMode(GameMode.SURVIVAL);
         if(g.canPlayerJump(player))
         {
